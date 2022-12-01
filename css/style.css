@@ -1,5 +1,91 @@
+/* Variables */
+:root {
+	--primary: #f9fafb;
+	--secondary: #212329;
+}
+
 html,
 body {
+	background-color: var(--primary);
+	color: var(--secondary);
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+	padding: 2em 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+nav .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+	margin: 0;
+}
+
+nav .logo img {
+	width: 12%;
+}
+
+nav .logo h3 {
+	font-family: "Merriweather", serif;
+	font-size: 1.25rem;
+	font-weight: 900;
+	margin: 0;
+	display: block;
+}
+
+nav .nav-links {
+	font-family: "Dosis", sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+nav .nav-links a {
+	text-decoration: none;
+	display: block;
+	padding: 1em 0 0 0;
+	cursor: pointer;
+}
+
+/* Header Article */
+header article {
+	color: var(--primary);
+	background-image: url("../images/1.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 350px;
+	display: block;
+	margin: 0 auto;
+}
+
+header .main-article {
+	display: grid;
+}
+
+/* Small tablets */
+@media (min-width: 680px) {
+}
+
+/* Medium tablets & Laptops */
+@media (min-width: 960px) {
+}
+
+/* Desktops */
+@media (min-width: 1200px) {
 }
